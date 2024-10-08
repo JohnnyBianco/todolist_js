@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GERENCIADOR DE TAREFAS</h1>
+        <div class="form-group">
+            <input type="text" id="task" placeholder="Tarefa">
+            <input type="text" id="responsible" placeholder="Responsável">
+            <label id="data" for="date">DATA:</label>
+            <input type="date" id="date">
+            <select id="priority">
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+            <button id="inserir" onclick="addTask()">Inserir Tarefa</button>
+            <button id="limpartodos" onclick="clearAllFields()">Limpar Todos</button>
+        </div>
+        <div class="filters">
+            <h2>Filtros</h2>
+            <input type="text" id="filterTask" placeholder="Filtrar por Tarefa" oninput="applyFilters()">
+            <input type="text" id="filterResponsible" placeholder="Filtrar por Responsável" oninput="applyFilters()">
+            <input type="date" id="filterDate" onchange="applyFilters()">
+            <select id="filterPriority" onchange="applyFilters()">
+                <option value="">Todas Prioridades</option>
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

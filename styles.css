@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h1 {
+    color: wheat;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: rgb(21, 21, 110);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="date"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+#priority {
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#task{
+    padding: 12px;
+}
+
+#responsible{
+    padding: 12px;
+}
+
+#data{
+    color: wheat;
+    font-weight: bold;
+
+}
+
+#limpartodos{
+    padding: 12px;
+}
+
+#inserir{
+    padding: 12px;
+    margin-right: 7px;
+}
+
+#filterTask{
+    padding: 12px;
+    margin-right: 7px;
+}
+
+#filterResponsible{
+    padding: 12px;
+    margin-right: 7px;
+}
+
+#filterPriority{
+    padding: 12px;
+    margin-right: 7px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px; /* Espaço abaixo do grupo de formulários */
+}
+
+.form-group button {
+    margin-left: 10px; /* Espaço entre os botões */
+}
+
+.filters {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters input, .filters select {
+    margin: 0 10px; /* Espaço entre os campos de filtro */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+    background-color: rgb(235, 220, 220);
+}
+
+li.in-progress {
+    background-color: rgb(235, 220, 220);
+}
+
+button.status {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+.button.completed {
+    background-color: #ffff00f8;
+    color: black;
+}
+
+.status .completed {
+    max-width: 50%;
+}
+
+.button.in-progress {
+    background-color: orange;
+    color: #fff;
+}
+
+.baixa {
+    background-color: yellow;
+    color: black;
+}
+
+.média {
+    background-color: green;
+    color: white;
+}
+
+.alta {
+    background-color: red;
+    color: white;
+}
+
+.task .icon {
+    display: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.icon.show {
+    display: inline;
+}
